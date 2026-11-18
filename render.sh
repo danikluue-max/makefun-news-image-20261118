@@ -1,21 +1,53 @@
 #!/bin/sh
-# Render page.html to entry.png at exactly 1024x1024 with headless Chromium.
-# Round 9: the light readability round — cream paper, 6 lead cards with 76px
-# photo-style SVG scenes + 24px Playfair headlines, 24-item ALSO list
-# (7-30) at 13px in two columns, real Natural Earth map at 157px and fixed
-# timeline. Playfair is vendored in fonts/, so the render needs
-# no network. Uses the Playwright-bundled Chromium (override with CHROME).
-set -e
-cd "$(dirname "$0")"
-CHROME="${CHROME:-$HOME/.cache/ms-playwright/chromium-1148/chrome-linux/chrome}"
-# Headless Chrome's viewport comes out ~87px shorter than the window, so a
-# 1024px-tall viewport needs --window-size height 1111.
-"$CHROME" --headless=new --disable-gpu --no-sandbox --hide-scrollbars \
-  --force-device-scale-factor=1 --window-size=1024,1111 \
+# Render the round-9 newspaper page to the 1024x1024 entry image.
+#
+# Pipeline, in my own words: find a Chromium, take a tall headless
+# screenshot of page.html, then cut off the empty strip Chrome leaves
+# below the page. The page layout is a fixed 1024x1024 square, so the
+# crop is always the top square of the capture. Playfair is vendored
+# under fonts/, so nothing here needs the network.
+#
+# Chromium source: $CHROME when set, otherwise the Playwright bundle
+# on this machine. All paths are resolved from this script's own
+# directory, so it works no matter where you call it from.
+
+set -eu
+
+DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$DIR"
+
+if [ -n "${CHROME:-}" ]; then
+  BROWSER=$CHROME
+else
+  BROWSER="$HOME/.cache/ms-playwright/chromium-1148/chrome-linux/chrome"
+fi
+
+# Chrome's headless viewport comes out about 87px shorter than the
+# window, so a 1111px window is what yields a 1024px viewport.
+SHOT=$(mktemp --suffix=.png /tmp/r9-shot-XXXXXX)
+
+"$BROWSER" \
+  --headless=new \
+  --no-sandbox \
+  --disable-gpu \
+  --hide-scrollbars \
+  --force-device-scale-factor=1 \
   --virtual-time-budget=5000 \
-  --screenshot="$PWD/.entry-full.png" "file://$PWD/page.html"
-# The capture is 1024x1111; the page itself is exactly 1024 tall, so crop
-# the blank strip at the bottom to meet the 1024x1024 gate.
-python3 -c "from PIL import Image; im=Image.open('.entry-full.png'); im.crop((0,0,1024,1024)).save('entry.png'); print(im.size, '->', Image.open('entry.png').size)"
-rm -f .entry-full.png
-ls -l entry.png
+  --window-size=1024,1111 \
+  --screenshot="$SHOT" \
+  "file://$DIR/page.html"
+
+python3 - "$SHOT" "$DIR/entry.png" <<'PY'
+import sys
+from PIL import Image
+
+shot_path, out_path = sys.argv[1], sys.argv[2]
+with Image.open(shot_path) as shot:
+    print("captured", shot.size)
+    square = shot.crop((0, 0, 1024, 1024))
+    square.save(out_path)
+with Image.open(out_path) as done:
+    print("entry", done.size, out_path)
+PY
+
+rm -f "$SHOT"

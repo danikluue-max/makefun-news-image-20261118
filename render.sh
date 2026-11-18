@@ -1,8 +1,8 @@
 #!/bin/sh
 # Render page.html to entry.png at exactly 1024x1024 with headless Chromium.
-# Round 6: the readability round — 6 big lead cards with 24px Playfair
-# headlines, 42-item ALSO list, same real Natural Earth map and fixed
-# timeline as round 5. Playfair is vendored in fonts/, so the render needs
+# Round 8: the photo-panel round — 6 lead cards with 76px photo-style
+# SVG scenes + 24px Playfair headlines, 42-item ALSO list (round 7), real
+# Natural Earth map at 168px and fixed timeline. Playfair is vendored in fonts/, so the render needs
 # no network. Uses the Playwright-bundled Chromium (override with CHROME).
 set -e
 cd "$(dirname "$0")"

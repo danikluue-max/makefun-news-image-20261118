@@ -102,6 +102,8 @@
   .also li { font-size:14px; font-weight:600; line-height:1.55; padding:0 4px; white-space:nowrap; overflow:hidden; color:#1E1B16; }
   .also li:nth-child(even) { background:rgba(0,0,0,0.06); }
   .also li b { font-weight:800; color:#1E1B16; letter-spacing:0.2px; }
+  .also li .cat { font-weight:800; color:#1E1B16; letter-spacing:0.2px; }
+  .also li .sep { }
   .also li .no { font-weight:800; font-size:14px; margin-right:6px; color:#0E5FA8; }
 
   /* footer */
@@ -112,32 +114,32 @@
 </head>
 <body>
 <div class="page">
-  <div class="toprow"><span>THE WORLD IN ONE PICTURE</span><span><b>30 STORIES</b> &middot; 6 CONTINENTS &middot; ONE DAY</span></div>
-  <h1 class="nameplate">WEDNESDAY <span>18 NOVEMBER</span> 2026</h1>
+  <div class="toprow"><span class="l">THE WORLD IN ONE PICTURE</span><span class="tr"><b>30 STORIES</b> &middot; 6 CONTINENTS &middot; ONE DAY</span></div>
+  <h1 class="nameplate">WEDNESDAY <span class="mo">18 NOVEMBER</span> 2026</h1>
   <div class="strapline">ALL FROM THIS ONE DAY &mdash; <b>EVERY STORY HAPPENED OR WAS FIRST REPORTED TODAY</b></div>
 
   <div class="hero">
-    <div class="cell"><div class="big">30</div><div class="cap">STORIES ON ONE PAGE</div></div>
-    <div class="cell"><div class="big cy">6</div><div class="cap">CONTINENTS COVERED</div></div>
-    <div class="cell"><div class="big em">11,000+</div><div class="cap">EBOLA CASES IN DR CONGO</div></div>
-    <div class="cell"><div class="big am">$115.8bn</div><div class="cap">NVIDIA QUARTERLY REVENUE</div></div>
+    <div class="cell"><div class="big"><span>30</span></div><div class="cap"><span>STORIES ON ONE PAGE</span></div></div>
+    <div class="cell"><div class="big cy"><span>6</span></div><div class="cap"><span>CONTINENTS COVERED</span></div></div>
+    <div class="cell"><div class="big em"><span>11,000+</span></div><div class="cap"><span>EBOLA CASES IN DR CONGO</span></div></div>
+    <div class="cell"><div class="big am"><span>$115.8bn</span></div><div class="cap"><span>NVIDIA QUARTERLY REVENUE</span></div></div>
   </div>
 
   <div class="spine">
-    <div class="shead">THE DAY, IN ORDER &mdash; <b>HOW WEDNESDAY UNFOLDED</b></div>
+    <div class="shead"><span>THE DAY, IN ORDER &mdash;</span> <b>HOW WEDNESDAY UNFOLDED</b></div>
     <div class="rail">
-      <span class="dot r" style="left:9.18%"></span>
-      <span class="dot r" style="left:29.59%"></span>
-      <span class="dot cy" style="left:50%"></span>
-      <span class="dot cy" style="left:70.41%"></span>
-      <span class="dot em" style="left:90.82%"></span>
+      <span style="left:9.18%" class="dot r"></span>
+      <span style="left:29.59%" class="dot r"></span>
+      <span style="left:50%" class="dot cy"></span>
+      <span style="left:70.41%" class="dot cy"></span>
+      <span style="left:90.82%" class="dot em"></span>
     </div>
     <div class="stops">
-      <div class="stop"><div class="ev r">GULF STRIKES<small>US HITS QESHM</small></div></div>
-      <div class="stop"><div class="ev r">KERCH BRIDGE FALLS<small>SPAN INTO THE STRAIT</small></div></div>
-      <div class="stop"><div class="ev cy">SHENZHEN EVE<small>SUMMIT THURSDAY</small></div></div>
-      <div class="stop"><div class="ev cy">PELTOLA WINS 56&ndash;44<small>DEMOCRATS&rsquo; 9TH FLIP</small></div></div>
-      <div class="stop"><div class="ev em">MEASLES STATUS LOST<small>AFTER 26 YEARS</small></div></div>
+      <div class="stop"><div class="ev r"><span>GULF STRIKES</span><small>US HITS QESHM</small></div></div>
+      <div class="stop"><div class="ev r"><span>KERCH BRIDGE FALLS</span><small>SPAN INTO THE STRAIT</small></div></div>
+      <div class="stop"><div class="ev cy"><span>SHENZHEN EVE</span><small>SUMMIT THURSDAY</small></div></div>
+      <div class="stop"><div class="ev cy"><span>PELTOLA WINS 56&ndash;44</span><small>DEMOCRATS&rsquo; 9TH FLIP</small></div></div>
+      <div class="stop"><div class="ev em"><span>MEASLES STATUS LOST</span><small>AFTER 26 YEARS</small></div></div>
     </div>
   </div>
 
@@ -160,9 +162,9 @@
         <circle cx="232" cy="28" r="4.8" fill="none" stroke="#F2F5FA" stroke-width="1.8"/><circle cx="256" cy="28" r="4.8" fill="none" stroke="#F2F5FA" stroke-width="1.8"/>
         <path d="M236 33 L230 28 M252 33 L258 28" stroke="#F2F5FA" stroke-width="1.8"/>
       </svg>
-      <div class="txt"><div class="tag r">GULF &middot; IRAN WAR</div>
-      <h2>US strikes Guards site on Qeshm; Iran drones hit Bahrain</h2>
-      <p>Third attack on Bahrain in a week; Kuwait also hit.</p></div>
+      <div class="txt"><div class="tag r"><span>GULF &middot; IRAN WAR</span></div>
+      <h2><span class="hl">US strikes Guards site on Qeshm; Iran drones hit Bahrain</span></h2>
+      <p><span class="deck">Third attack on Bahrain in a week; Kuwait also hit.</span></p></div>
     </div>
     <div class="story">
       <svg class="scene" viewBox="0 0 324 76" preserveAspectRatio="none">
@@ -181,9 +183,9 @@
         <rect x="205" y="64" width="10" height="5" fill="#F2F5FA" transform="rotate(-14 209 66)"/>
         <circle cx="60" cy="38" r="3" fill="#FF4D5E"/><circle cx="280" cy="38" r="3" fill="#FF4D5E"/>
       </svg>
-      <div class="txt"><div class="tag r">UKRAINE &middot; KERCH STRAIT</div>
-      <h2>Kerch Bridge hit again; span falls into the strait</h2>
-      <p>Second day of strikes; Ukraine says the span is down</p></div>
+      <div class="txt"><div class="tag r"><span>UKRAINE &middot; KERCH STRAIT</span></div>
+      <h2><span class="hl">Kerch Bridge hit again; span falls into the strait</span></h2>
+      <p><span class="deck">Second day of strikes; Ukraine says the span is down</span></p></div>
     </div>
     <div class="story">
       <svg class="scene" viewBox="0 0 324 76" preserveAspectRatio="none">
@@ -208,9 +210,9 @@
         <rect x="202" y="32" width="28" height="14" fill="#F2F5FA"/><rect x="202" y="36.7" width="28" height="4.6" fill="#0039A6"/><rect x="202" y="41.3" width="28" height="4.7" fill="#D52B1E"/>
         <rect y="70" width="324" height="6" fill="#0A1626"/>
       </svg>
-      <div class="txt"><div class="tag cy">CHINA &middot; SHENZHEN</div>
-      <h2>Trump lands in Shenzhen for talks with Xi and Putin</h2>
-      <p>Xi greets him; Xi and Putin denounce protectionism.</p></div>
+      <div class="txt"><div class="tag cy"><span>CHINA &middot; SHENZHEN</span></div>
+      <h2><span class="hl">Trump lands in Shenzhen for talks with Xi and Putin</span></h2>
+      <p><span class="deck">Xi greets him; Xi and Putin denounce protectionism.</span></p></div>
     </div>
   </div>
 
@@ -233,9 +235,9 @@
         <rect x="70" y="45" width="18" height="3" fill="#0B1220"/>
         <path d="M62 60 L69 67 L86 50" stroke="#F2F5FA" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <div class="txt"><div class="tag cy">AMERICAS &middot; US POLITICS</div>
-      <h2>Peltola wins Alaska&rsquo;s Senate race</h2>
-      <p>Democrats reach 56&ndash;44, ninth flip, largest since 2009.</p></div>
+      <div class="txt"><div class="tag cy"><span>AMERICAS &middot; US POLITICS</span></div>
+      <h2><span class="hl">Peltola wins Alaska&rsquo;s Senate race</span></h2>
+      <p><span class="deck">Democrats reach 56&ndash;44, ninth flip, largest since 2009.</span></p></div>
     </div>
     <div class="story">
       <svg class="scene" viewBox="0 0 324 76" preserveAspectRatio="none">
@@ -255,9 +257,9 @@
         <rect x="158" y="54" width="9" height="8" fill="#F2F5FA"/><path d="M161 56 h2 M162 55 v4" stroke="#22385E" stroke-width="1.8"/>
         <rect x="92" y="66" width="6" height="6" fill="#FBBF24" opacity="0.9"/><rect x="222" y="66" width="6" height="6" fill="#FBBF24" opacity="0.9"/>
       </svg>
-      <div class="txt"><div class="tag em">HEALTH &middot; USA</div>
-      <h2>US loses measles-free status after 26 years</h2>
-      <p>5,412 cases in 2026, 10 deaths &mdash; most in decades.</p></div>
+      <div class="txt"><div class="tag em"><span>HEALTH &middot; USA</span></div>
+      <h2><span class="hl">US loses measles-free status after 26 years</span></h2>
+      <p><span class="deck">5,412 cases in 2026, 10 deaths &mdash; most in decades.</span></p></div>
     </div>
     <div class="story">
       <svg class="scene" viewBox="0 0 324 76" preserveAspectRatio="none">
@@ -277,15 +279,15 @@
         <path d="M244 48 L244 76" stroke="#34D399" stroke-width="1.8"/>
         <rect y="70" width="324" height="6" fill="#0A0508"/>
       </svg>
-      <div class="txt"><div class="tag em">AFRICA &middot; DR CONGO</div>
-      <h2>Ebola cases in DR Congo pass 11,000</h2>
-      <p>5,400 dead; 3 in 4 infected children under five die.</p></div>
+      <div class="txt"><div class="tag em"><span>AFRICA &middot; DR CONGO</span></div>
+      <h2><span class="hl">Ebola cases in DR Congo pass 11,000</span></h2>
+      <p><span class="deck">5,400 dead; 3 in 4 infected children under five die.</span></p></div>
     </div>
   </div>
 
   <div class="mapzone">
     <div class="mapcol">
-      <h4>WHERE IT HAPPENED &mdash; <b>WEDNESDAY&rsquo;S NEWS ON THE MAP</b></h4>
+      <h4><span>WHERE IT HAPPENED &mdash;</span> <b>WEDNESDAY&rsquo;S NEWS ON THE MAP</b></h4>
 <svg id="worldmap" viewBox="0 0 684 266" preserveAspectRatio="none">
 <rect x="0" y="0" width="684" height="266" fill="#F1EAD6"/>
 <path d="M0,266L0,223.3L0,180.5L0,137.8L0,95L0,47.5L0,0" fill="none" stroke="rgba(0,0,0,0.08)" stroke-width="0.6"/>
@@ -481,98 +483,98 @@
 <path d="M381.1,72.5L381.0,71.8L380.5,71.6L380.1,71.1L380.5,70.7L380.9,70.5L381.2,69.9L381.5,69.8L381.8,70.1L382.2,70.2L382.4,70.5L382.7,70.6L383.1,70.9L383.4,70.9L383.2,71.4L382.9,71.6L383.0,71.7L382.6,71.8L381.4,72.1L381.4,72.5Z" fill="#D6CBA9" stroke="#9C8F6E" stroke-width="0.5" stroke-linejoin="round"/>
 <path d="M224.8,131.6L225.9,131.3L226.3,131.4L226.2,132.8L224.6,133L224.3,132.8L224.8,132.3Z" fill="#D6CBA9" stroke="#9C8F6E" stroke-width="0.5" stroke-linejoin="round"/>
 <path d="M400.6,145.3L398.9,144.1L398.5,143.3L397.4,143.7L396.5,143.5L396.0,143.9L395.2,143.6L394.0,142.1L393.7,141.5L392.3,140.7L391.8,139.6L391.0,138.7L389.7,137.7L389.7,137.1L388.7,136.4L387.4,135.6L388.0,135.4L388.6,135.1L389.1,133.4L389.6,132.5L391.0,132.2L391.3,132.7L392.3,133.8L392.8,134.0L393.5,133.7L394.9,133.8L395.1,134.1L397.0,134.1L397.1,133.8L398.1,133.4L398.3,132.8L399.0,132.4L400.6,133.6L401.6,133.4L402.5,132.0L403.6,130.9L403.4,129.8L402.9,129.3L404.1,129.2L404.2,128.7L405.1,128.9L404.9,130.3L405.1,131.6L406.1,132.4L406.3,133.0L406.3,134.0L406.5,134.0L406.6,135.5L406.3,136.1L405.3,136.1L404.6,137.2L405.8,137.3L406.7,138.3L407.1,139.0L407.9,139.5L409.1,141.5L407.8,142.8L406.6,143.9L405.4,144.8L404.1,144.8L402.6,145.2L401.4,144.8Z" fill="#D6CBA9" stroke="#9C8F6E" stroke-width="0.5" stroke-linejoin="round"/>
-<circle cx="57.2" cy="35.7" r="6.2" fill="#38BDF8" opacity="0.32"/>
-<circle cx="57.2" cy="35.7" r="3.8" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="67.2" y="39.7" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">ALASKA</text>
-<circle cx="409.3" cy="65.9" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="409.3" cy="65.9" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="419.3" y="57.9" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">KERCH</text>
-<line x1="448.2" y1="101.3" x2="454.2" y2="86.3" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
-<circle cx="448.2" cy="101.3" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="448.2" cy="101.3" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="454.2" y="89.3" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">QESHM</text>
-<line x1="438.1" y1="102.2" x2="430.1" y2="117.2" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
-<circle cx="438.1" cy="102.2" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="438.1" cy="102.2" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="430.1" y="120.2" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="end" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">BAHRAIN</text>
-<circle cx="407.6" cy="92.1" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="407.6" cy="92.1" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="399.6" y="96.1" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="end" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">GAZA</text>
-<circle cx="371.1" cy="160.2" r="6.2" fill="#34D399" opacity="0.32"/>
-<circle cx="371.1" cy="160.2" r="3.8" fill="#34D399" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="361.1" y="164.2" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="end" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">KINSHASA</text>
-<circle cx="524.6" cy="114.4" r="6.2" fill="#38BDF8" opacity="0.32"/>
-<circle cx="524.6" cy="114.4" r="3.8" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="534.6" y="106.4" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">MYANMAR</text>
-<line x1="495.1" y1="120.6" x2="489.1" y2="137.6" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
-<circle cx="495.1" cy="120.6" r="6.2" fill="#FB923C" opacity="0.32"/>
-<circle cx="495.1" cy="120.6" r="3.8" fill="#FB923C" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="489.1" y="140.6" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="middle" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">ANDHRA</text>
-<circle cx="507.3" cy="46.7" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="507.3" cy="46.7" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="515.3" y="36.7" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">SIBERIA</text>
-<circle cx="584.3" cy="75.4" r="6.2" fill="#FF4D5E" opacity="0.32"/>
-<circle cx="584.3" cy="75.4" r="3.8" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="594.3" y="79.4" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">N KOREA</text>
-<line x1="558.8" y1="109.3" x2="568.8" y2="124.3" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
-<circle cx="558.8" cy="109.3" r="6.2" fill="#38BDF8" opacity="0.32"/>
-<circle cx="558.8" cy="109.3" r="3.8" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="568.8" y="127.3" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">SHENZHEN</text>
-<circle cx="38.0" cy="192.3" r="6.2" fill="#FB923C" opacity="0.32"/>
-<circle cx="38.0" cy="192.3" r="3.8" fill="#FB923C" stroke="#F7F2E7" stroke-width="1.6"/>
-<text x="48.0" y="196.3" font-size="15" font-weight="800" font-family="Liberation Sans, Arial, sans-serif" fill="#1E1B16" text-anchor="start" paint-order="stroke" stroke="#F7F2E7" stroke-width="5" stroke-linejoin="round">COOK IS.</text>
+<g class="pin"><title>ALASKA</title><circle cx="57.2" cy="35.7" r="6.2" fill="#38BDF8" opacity="0.32"/>
+<circle r="3.8" cx="57.2" cy="35.7" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="67.2" y="39.7" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">ALASKA</text></g>
+<g class="pin"><title>KERCH</title><circle cx="409.3" cy="65.9" r="6.2" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="409.3" cy="65.9" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="419.3" y="57.9" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">KERCH</text></g>
+<g class="pin"><title>QESHM</title><line x1="448.2" y1="101.3" x2="454.2" y2="86.3" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
+<circle r="6.2" cx="448.2" cy="101.3" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="448.2" cy="101.3" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="454.2" y="89.3" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">QESHM</text></g>
+<g class="pin"><title>BAHRAIN</title><line x1="438.1" y1="102.2" x2="430.1" y2="117.2" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
+<circle r="6.2" cx="438.1" cy="102.2" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="438.1" cy="102.2" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="end" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="430.1" y="120.2" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">BAHRAIN</text></g>
+<g class="pin"><title>GAZA</title><circle cx="407.6" cy="92.1" r="6.2" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="407.6" cy="92.1" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="end" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="399.6" y="96.1" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">GAZA</text></g>
+<g class="pin"><title>KINSHASA</title><circle cx="371.1" cy="160.2" r="6.2" fill="#34D399" opacity="0.32"/>
+<circle r="3.8" cx="371.1" cy="160.2" fill="#34D399" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="end" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="361.1" y="164.2" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">KINSHASA</text></g>
+<g class="pin"><title>MYANMAR</title><circle cx="524.6" cy="114.4" r="6.2" fill="#38BDF8" opacity="0.32"/>
+<circle r="3.8" cx="524.6" cy="114.4" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="534.6" y="106.4" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">MYANMAR</text></g>
+<g class="pin"><title>ANDHRA</title><line x1="495.1" y1="120.6" x2="489.1" y2="137.6" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
+<circle r="6.2" cx="495.1" cy="120.6" fill="#FB923C" opacity="0.32"/>
+<circle r="3.8" cx="495.1" cy="120.6" fill="#FB923C" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="middle" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="489.1" y="140.6" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">ANDHRA</text></g>
+<g class="pin"><title>SIBERIA</title><circle cx="507.3" cy="46.7" r="6.2" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="507.3" cy="46.7" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="515.3" y="36.7" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">SIBERIA</text></g>
+<g class="pin"><title>N KOREA</title><circle cx="584.3" cy="75.4" r="6.2" fill="#FF4D5E" opacity="0.32"/>
+<circle r="3.8" cx="584.3" cy="75.4" fill="#FF4D5E" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="594.3" y="79.4" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">N KOREA</text></g>
+<g class="pin"><title>SHENZHEN</title><line x1="558.8" y1="109.3" x2="568.8" y2="124.3" stroke="rgba(30,27,22,0.55)" stroke-width="1.0"/>
+<circle r="6.2" cx="558.8" cy="109.3" fill="#38BDF8" opacity="0.32"/>
+<circle r="3.8" cx="558.8" cy="109.3" fill="#38BDF8" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="568.8" y="127.3" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">SHENZHEN</text></g>
+<g class="pin"><title>COOK IS.</title><circle cx="38.0" cy="192.3" r="6.2" fill="#FB923C" opacity="0.32"/>
+<circle r="3.8" cx="38.0" cy="192.3" fill="#FB923C" stroke="#F7F2E7" stroke-width="1.6"/>
+<text text-anchor="start" font-family="Liberation Sans, Arial, sans-serif" font-weight="800" font-size="15" x="48.0" y="196.3" fill="#1E1B16" paint-order="stroke" stroke-width="5" stroke-linejoin="round" stroke="#F7F2E7">COOK IS.</text></g>
       </svg>
     </div>
     <div class="chartcol">
-      <h4>THE DAY BY FIELD &mdash; <b>30 STORIES</b></h4>
+      <h4><span>THE DAY BY FIELD &mdash;</span> <b>30 STORIES</b></h4>
       <div class="bars">
-        <div class="brow"><div class="bl">Politics</div><div class="bt"><div class="bf" style="width:100%;background:#0284C7"></div></div><div class="bn cy">7</div></div>
-        <div class="brow"><div class="bl">War &amp; defence</div><div class="bt"><div class="bf" style="width:86%;background:#C81E2B"></div></div><div class="bn r">6</div></div>
-        <div class="brow"><div class="bl">Economy</div><div class="bt"><div class="bf" style="width:71%;background:#B45309"></div></div><div class="bn am">5</div></div>
-        <div class="brow"><div class="bl">Climate &amp; disasters</div><div class="bt"><div class="bf" style="width:43%;background:#C2410C"></div></div><div class="bn or">3</div></div>
-        <div class="brow"><div class="bl">Technology</div><div class="bt"><div class="bf" style="width:43%;background:#6D28D9"></div></div><div class="bn vi">3</div></div>
-        <div class="brow"><div class="bl">Sport</div><div class="bt"><div class="bf" style="width:43%;background:#4D7C0F"></div></div><div class="bn li">3</div></div>
-        <div class="brow"><div class="bl">Health</div><div class="bt"><div class="bf" style="width:29%;background:#047857"></div></div><div class="bn em">2</div></div>
-        <div class="brow"><div class="bl">Science</div><div class="bt"><div class="bf" style="width:14%;background:#0F766E"></div></div><div class="bn te">1</div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Politics</span></div><div class="bt"><div style="width:100%;background:#0284C7" class="bf"></div></div><div class="bn cy"><span class="num">7</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">War &amp; defence</span></div><div class="bt"><div style="width:86%;background:#C81E2B" class="bf"></div></div><div class="bn r"><span class="num">6</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Economy</span></div><div class="bt"><div style="width:71%;background:#B45309" class="bf"></div></div><div class="bn am"><span class="num">5</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Climate &amp; disasters</span></div><div class="bt"><div style="width:43%;background:#C2410C" class="bf"></div></div><div class="bn or"><span class="num">3</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Technology</span></div><div class="bt"><div style="width:43%;background:#6D28D9" class="bf"></div></div><div class="bn vi"><span class="num">3</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Sport</span></div><div class="bt"><div style="width:43%;background:#4D7C0F" class="bf"></div></div><div class="bn li"><span class="num">3</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Health</span></div><div class="bt"><div style="width:29%;background:#047857" class="bf"></div></div><div class="bn em"><span class="num">2</span></div></div>
+        <div class="brow"><div class="bl"><span class="lbl">Science</span></div><div class="bt"><div style="width:14%;background:#0F766E" class="bf"></div></div><div class="bn te"><span class="num">1</span></div></div>
       </div>
     </div>
   </div>
 
-  <div class="alsotitle">ALSO ON WEDNESDAY 18 NOVEMBER &mdash; <b>24 MORE STORIES</b></div>
+  <div class="alsotitle"><span>ALSO ON WEDNESDAY 18 NOVEMBER &mdash;</span> <b>24 MORE STORIES</b></div>
   <div class="also">
     <ul>
-      <li><span class="no">7</span><b>ECONOMY</b> &mdash; Nvidia revenue doubles to $115.8bn.</li>
-      <li><span class="no">8</span><b>CLIMATE</b> &mdash; Cyclone Akvan strengthens in the Bay of Bengal.</li>
-      <li><span class="no">9</span><b>SPACE</b> &mdash; Voyager 1 reaches one light-day from Earth.</li>
-      <li><span class="no">10</span><b>GAZA</b> &mdash; Board of Peace warns the truce could collapse.</li>
-      <li><span class="no">11</span><b>SIBERIA</b> &mdash; Russian military plane crashes; 19 dead.</li>
-      <li><span class="no">12</span><b>NORTH KOREA</b> &mdash; Ballistic missiles fired after US drill ends.</li>
-      <li><span class="no">13</span><b>CYCLONE XAVIER</b> &mdash; Cat 5 storm hits the Cook Islands.</li>
-      <li><span class="no">14</span><b>MYANMAR</b> &mdash; World Court to rule on genocide case.</li>
-      <li><span class="no">15</span><b>INDIA</b> &mdash; Wholesale inflation 12.29%, highest in 4 years.</li>
-      <li><span class="no">16</span><b>TOKYO</b> &mdash; India and Japan hold 2+2 dialogue.</li>
-      <li><span class="no">17</span><b>GULF OF FINLAND</b> &mdash; Ukraine drone hits Russian warship.</li>
-      <li><span class="no">18</span><b>EUROPE</b> &mdash; 8,000 bomb threats in a month.</li>
+      <li><span class="it"><span class="no">7</span><b>ECONOMY</b> &mdash; Nvidia revenue doubles to $115.8bn.</span></li>
+      <li><span class="it"><span class="no">8</span><b>CLIMATE</b> &mdash; Cyclone Akvan strengthens in the Bay of Bengal.</span></li>
+      <li><span class="it"><span class="no">9</span><b>SPACE</b> &mdash; Voyager 1 reaches one light-day from Earth.</span></li>
+      <li><span class="it"><span class="no">10</span><b>GAZA</b> &mdash; Board of Peace warns the truce could collapse.</span></li>
+      <li><span class="it"><span class="no">11</span><b>SIBERIA</b> &mdash; Russian military plane crashes; 19 dead.</span></li>
+      <li><span class="it"><span class="no">12</span><b>NORTH KOREA</b> &mdash; Ballistic missiles fired after US drill ends.</span></li>
+      <li><span class="it"><span class="no">13</span><b>CYCLONE XAVIER</b> &mdash; Cat 5 storm hits the Cook Islands.</span></li>
+      <li><span class="it"><span class="no">14</span><b>MYANMAR</b> &mdash; World Court to rule on genocide case.</span></li>
+      <li><span class="it"><span class="no">15</span><b>INDIA</b> &mdash; Wholesale inflation 12.29%, highest in 4 years.</span></li>
+      <li><span class="it"><span class="no">16</span><b>TOKYO</b> &mdash; India and Japan hold 2+2 dialogue.</span></li>
+      <li><span class="it"><span class="no">17</span><b>GULF OF FINLAND</b> &mdash; Ukraine drone hits Russian warship.</span></li>
+      <li><span class="it"><span class="no">18</span><b>EUROPE</b> &mdash; 8,000 bomb threats in a month.</span></li>
     </ul>
     <ul>
-      <li><span class="no">19</span><b>CYBER</b> &mdash; Incident hits Zoom, CNN, HSBC, IKEA sites.</li>
-      <li><span class="no">20</span><b>YEMEN</b> &mdash; Houthis claim control of 10 districts.</li>
-      <li><span class="no">21</span><b>KNESSET</b> &mdash; Matan Kahana elected president, 66&ndash;52.</li>
-      <li><span class="no">22</span><b>SANCTIONS</b> &mdash; Britain, Australia sanction Israeli builders.</li>
-      <li><span class="no">23</span><b>MARKETS</b> &mdash; Stocks fall; Euro Stoxx 50 down 2.15%.</li>
-      <li><span class="no">24</span><b>BRAZIL</b> &mdash; Real falls as Lula plan disappoints.</li>
-      <li><span class="no">25</span><b>ENERGY</b> &mdash; Europe pays up for LNG; stocks low.</li>
-      <li><span class="no">26</span><b>CHIPS</b> &mdash; US tightens chip access rules for China.</li>
-      <li><span class="no">27</span><b>ANTHROPIC</b> &mdash; AI firm to list on Nasdaq 19 Nov.</li>
-      <li><span class="no">28</span><b>TURIN</b> &mdash; Zverev reaches ATP Finals knockouts.</li>
-      <li><span class="no">29</span><b>GOLF</b> &mdash; Tiger Woods returns in December.</li>
-      <li><span class="no">30</span><b>FOOTBALL</b> &mdash; Northern Ireland promoted to top tier.</li>
+      <li><span class="it"><span class="no">19</span><b>CYBER</b> &mdash; Incident hits Zoom, CNN, HSBC, IKEA sites.</span></li>
+      <li><span class="it"><span class="no">20</span><b>YEMEN</b> &mdash; Houthis claim control of 10 districts.</span></li>
+      <li><span class="it"><span class="no">21</span><b>KNESSET</b> &mdash; Matan Kahana elected president, 66&ndash;52.</span></li>
+      <li><span class="it"><span class="no">22</span><b>SANCTIONS</b> &mdash; Britain, Australia sanction Israeli builders.</span></li>
+      <li><span class="it"><span class="no">23</span><b>MARKETS</b> &mdash; Stocks fall; Euro Stoxx 50 down 2.15%.</span></li>
+      <li><span class="it"><span class="no">24</span><b>BRAZIL</b> &mdash; Real falls as Lula plan disappoints.</span></li>
+      <li><span class="it"><span class="no">25</span><b>ENERGY</b> &mdash; Europe pays up for LNG; stocks low.</span></li>
+      <li><span class="it"><span class="no">26</span><b>CHIPS</b> &mdash; US tightens chip access rules for China.</span></li>
+      <li><span class="it"><span class="no">27</span><b>ANTHROPIC</b> &mdash; AI firm to list on Nasdaq 19 Nov.</span></li>
+      <li><span class="it"><span class="no">28</span><b>TURIN</b> &mdash; Zverev reaches ATP Finals knockouts.</span></li>
+      <li><span class="it"><span class="no">29</span><b>GOLF</b> &mdash; Tiger Woods returns in December.</span></li>
+      <li><span class="it"><span class="no">30</span><b>FOOTBALL</b> &mdash; Northern Ireland promoted to top tier.</span></li>
     </ul>
   </div>
 
   <div class="foot">
-    <div class="src">Sources: Reuters, AP, BBC, CNN, Al Jazeera, The Hindu, WHO, NASA JPL, IMD &mdash; 18 November 2026.</div>
-    <div class="fine">Every story on this page was reported on Wednesday 18 November 2026. Figures are as reported that day; nothing here is speculation.</div>
+    <div class="src"><span>Sources: Reuters, AP, BBC, CNN, Al Jazeera, The Hindu, WHO, NASA JPL, IMD &mdash; 18 November 2026.</span></div>
+    <div class="fine"><span>Every story on this page was reported on Wednesday 18 November 2026. Figures are as reported that day; nothing here is speculation.</span></div>
   </div>
 </div>
 </body>
